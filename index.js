@@ -19,7 +19,8 @@ const help = new Discord.MessageEmbed()
         { name: '일레이나 서버', value: '서버정보'},
         { name: '일레이나 유저', value: '유저 정보' },
         { name: '일레이나 초대', value: '봇 초대' },
-        { name: '일레이나 도배', value: '일레이나에게 도배를 시킵니다. 10번만 반복되며 이것은 추방당하고 싶다는 의미입니다. '}
+    { name: '일레이나 도배', value: '일레이나에게 도배를 시킵니다. 10번만 반복되며 이것은 추방당하고 싶다는 의미입니다. ' },
+        { name: '일레이나 깃', value: '일레이나 봇 깃허브 주소를 보여줍니다.'}
 	)
 	.setTimestamp()
 	.setFooter('Made by Elaina');
@@ -63,6 +64,12 @@ client.on('message', message => {
 client.on('message', message => {
   if (message.content === '일레이나 핑') {  
     message.channel.send(`🏓핑! ${Date.now() - message.createdTimestamp}(ms)이에요`);
+  }
+});
+
+client.on('message', message => {
+  if (message.content === '일레이나 깃') {  
+    message.channel.send(`https://github.com/Elaina1017/Elaina-discordbot`);
   }
 });
 
