@@ -1,6 +1,7 @@
 const config = require('./config.json');
 const Discord = require('discord.js');
 const client = new Discord.Client();
+const fs = require('fs')
 
 client.on('ready', () => {
   console.log(`${client.user.tag}으로 로그인했어요!`);
@@ -90,7 +91,9 @@ client.on('message', message => {
 //로그
 client.on('message', message => {
   console.log(`\n${message.content}\n보낸사람이름: ${message.author.tag}\n서버이름: ${message.guild.name}`);
+  fs.appendFileSync('log.txt', `\n${message.content}\n보낸사람이름: ${message.author.tag}\n서버이름: ${message.guild.name}\n`);
 });
+
 
 //로그인
 client.login(config.token);

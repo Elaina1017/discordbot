@@ -1,0 +1,4 @@
+requirements
+
+discord.js
+fs
