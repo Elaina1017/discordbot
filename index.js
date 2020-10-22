@@ -1,8 +1,9 @@
+const config = require('./config.json');
 const Discord = require('discord.js');
 const client = new Discord.Client();
 
 client.on('ready', () => {
-  console.log(`Logged in as ${client.user.tag}!`);
+  console.log(`${client.user.tag}으로 로그인했어요!`);
   client.user.setActivity(`일레이나 도움`);
 });
 
@@ -17,7 +18,8 @@ const help = new Discord.MessageEmbed()
         { name: '일레이나 핑', value: '핑 측정' },
         { name: '일레이나 서버', value: '서버정보'},
         { name: '일레이나 유저', value: '유저 정보' },
-        { name: '일레이나 초대', value: '봇 초대' }
+        { name: '일레이나 초대', value: '봇 초대' },
+        { name: '일레이나 도배', value: '일레이나에게 도배를 시킵니다. 10번만 반복되며 이것은 추방당하고 싶다는 의미입니다. '}
 	)
 	.setTimestamp()
 	.setFooter('Made by Elaina');
@@ -48,7 +50,7 @@ const invite = new Discord.MessageEmbed()
 
 client.on('message', message => {
   if (message.content === '일레이나 서버') {  
-    message.channel.send(`서버이름: ${message.guild.name}\n멤버 수: ${message.guild.memberCount}`);
+    message.channel.send(`서버이름:: ${message.guild.name}\n멤버 수: ${message.guild.memberCount}`);
   }
 });
 
@@ -64,5 +66,24 @@ client.on('message', message => {
   }
 });
 
+client.on('message', message => {
+  if (message.content === '일레이나 접두사') {  
+    message.channel.send(config.prefix);
+  }
+});
 
-client.login('NzY4NjY0ODQ0ODk0MjA4MDYx.X5Dw7A.DYRYEgF9bs_ZOoU9XgXZ6iDQPso');
+client.on('message', message => {
+  if (message.content === '일레이나 도배') {  
+    for (var i = 0; i < 10; i++) {
+      message.channel.send(`방장님 ${message.author.tag} 가 추방당하고 싶대요`);
+}
+  }
+});
+
+//로그
+client.on('message', message => {
+  console.log(`\n${message.content}\n보낸사람이름: ${message.author.tag}\n서버이름: ${message.guild.name}`);
+});
+
+//로그인
+client.login(config.token);
