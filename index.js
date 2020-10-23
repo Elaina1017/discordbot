@@ -31,17 +31,11 @@ const help = new Discord.MessageEmbed()
   .setTimestamp()
   .setFooter("Made by Elaina");
 
-const invite = new Discord.MessageEmbed()
-  .setColor("#0099ff")
-  .addFields({ name: "초대링크", value: "http://invite.elaina.kro.kr/" })
-  .setTimestamp()
-  .setFooter("Made by Elaina");
-
 //commands
 
 client.on("message", (message) => {
   if (message.content === "일레이나 초대") {
-    message.channel.send(invite);
+    message.channel.send(`http://invite.elaina.kro.kr/`);
   }
 });
 
@@ -70,7 +64,7 @@ client.on("message", (message) => {
 client.on("message", (message) => {
   if (message.content === "일레이나 핑") {
     message.channel.send(
-      `🏓퐁! ${Date.now() - message.createdTimestamp}(ms)이에요`
+      `🏓! ${Date.now() - message.createdTimestamp}(ms)이에요`
     );
   }
 });
