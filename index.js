@@ -25,7 +25,8 @@ const help = new Discord.MessageEmbed()
       value:
         "일레이나에게 도배를 시킵니다. 10번만 반복되며 이것은 추방당하고 싶다는 의미입니다. ",
     },
-    { name: "일레이나 깃", value: "일레이나 봇 깃허브 주소를 보여줍니다." }
+    { name: "일레이나 깃", value: "일레이나 봇 깃허브 주소를 보여줍니다." },
+    { name: "일레이나 주사위", value: "주사위굴리기" }
   )
   .setTimestamp()
   .setFooter("Made by Elaina");
@@ -69,8 +70,16 @@ client.on("message", (message) => {
 client.on("message", (message) => {
   if (message.content === "일레이나 핑") {
     message.channel.send(
-      `🏓핑! ${Date.now() - message.createdTimestamp}(ms)이에요`
+      `🏓퐁! ${Date.now() - message.createdTimestamp}(ms)이에요`
     );
+  }
+});
+
+client.on("message", (message) => {
+  if (message.content === "일레이나 주사위") {
+    var random = Math.floor(Math.random() * 6) + 1;
+    console.log(random);
+    message.channel.send(random);
   }
 });
 
