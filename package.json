@@ -1,6 +1,25 @@
 {
+  "name": "discord-elaina-bot",
+  "version": "0.0.1",
+  "description": "elaina discord bot",
+  "main": "index.js",
   "dependencies": {
     "discord.js": "^12.4.0",
     "fs": "0.0.1-security"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Elaina1017/Elaina-discordbot.git"
+  },
+  "keywords": [
+    "discord",
+    "javascript",
+    "nodejs"
+  ],
+  "author": "Elaina1017",
+  "bugs": {
+    "url": "https://github.com/Elaina1017/Elaina-discordbot/issues"
+  },
+  "homepage": "invite.elaina.kro.kr"
 }
