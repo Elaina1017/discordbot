@@ -26,7 +26,10 @@ const help = new Discord.MessageEmbed()
         "일레이나에게 도배를 시킵니다. 10번만 반복되며 이것은 추방당하고 싶다는 의미입니다. ",
     },
     { name: "일레이나 깃", value: "일레이나 봇 깃허브 주소를 보여줍니다." },
-    { name: "일레이나 주사위", value: "주사위굴리기" }
+    {
+      name: "일레이나 주사위",
+      value: "1부터 6까지의 랜덤한 숫자를 보여줍니다.",
+    }
   )
   .setTimestamp()
   .setFooter("Made by Elaina");

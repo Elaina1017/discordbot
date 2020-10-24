@@ -29,3 +29,7 @@ node.js 로 만든 디스코드 봇입니다. Elaina1017이 만들었으며 2020
 보낸사람이름: Elaina#1232
 서버이름: 일레이나봇
 ```
+
+# 초대하기
+
+[invite.elaina.kro.kr](invite.elaina.kro.kr)
