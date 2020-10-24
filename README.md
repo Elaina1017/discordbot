@@ -22,4 +22,4 @@ node.js 로 만든 디스코드 봇입니다. Elaina1017이 만들었으며 2020
 
 # 초대하기
 
-[invite.elaina.kro.kr](invite.elaina.kro.kr)
+[invite.elaina.kro.kr](http://invite.elaina.kro.kr)
