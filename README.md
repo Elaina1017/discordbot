@@ -22,14 +22,6 @@ node.js 로 만든 디스코드 봇입니다. Elaina1017이 만들었으며 2020
 
 로그 (Log) : console.log, log.txt 으로 채팅 로그를 남깁니다.
 
-예시:
-
-```
-ㄷ
-보낸사람이름: Elaina#1232
-서버이름: 일레이나봇
-```
-
 # 초대하기
 
 [invite.elaina.kro.kr](invite.elaina.kro.kr)
