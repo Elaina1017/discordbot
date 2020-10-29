@@ -18,7 +18,7 @@ node.js 로 만든 디스코드 봇입니다. Elaina1017이 만들었으며 2020
 
 주사위 (Dice) : 1부터 6까지의 랜덤한 숫자를 보내줍니다.
 
-로그 (Log) : console.log, log.txt 으로 채팅 로그를 남깁니다.
+로그 (Log) : console.log, log.md 으로 채팅 로그를 남깁니다.
 
 # 초대하기
 

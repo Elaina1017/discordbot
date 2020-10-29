@@ -106,7 +106,7 @@ client.on("message", (message) => {
     `\n${message.content}\n보낸사람이름: ${message.author.tag}\n서버이름: ${message.guild.name}`
   );
   fs.appendFileSync(
-    "log.txt",
+    "log.md",
     `\n${message.content}\n보낸사람이름: ${message.author.tag}\n서버이름: ${message.guild.name}\n`
   );
 });
